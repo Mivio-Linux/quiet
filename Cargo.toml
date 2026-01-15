@@ -1,0 +1,12 @@
+[package]
+name = "quiet"
+version = "0.0.2"
+edition = "2024"
+
+[dependencies]
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+strip = true  
+panic = "abort"    
