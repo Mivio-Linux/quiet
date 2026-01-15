@@ -1,26 +1,26 @@
-![quiet logo](quiet_logo.png)
-
-Эта программа позволит вам скрыть ненужные логи, но при ошибке выведет ее:
+# <img src="https://gitea.com/miviodev/quiet/raw/branch/master/quiet_logo.png" width="32"> quiet 
+![RU README](./README_RU.md)
+This utility lets you suppress unnecessary logs, but displays errors when they occur:
 ```bash
-quiet gut clone # вместо git clone
+quiet gut clone # instead of git clone
 ```
-вывод: 
+Output:
 ```
 [ERROR]: No such file or directory (os error 2)
 ```
-Так-же в последней версии я сделал обработку ошибок не только в shell (например не найдена команда), а еще и в командах:
+In the latest version, I’ve also added error handling not only for shell-level issues (e.g., command not found) but also for errors within commands themselves:
 ```
-quiet git lig # вместо git log
+quiet git lig # instead of git log
 ```
-вывод:
+Output:
 ```
-[ERROR]: git: «lig» не является командой git. Смотрите «git --help».
-Самые похожие команды:
+[ERROR]: git: 'lig' is not a git command. See 'git --help'.
+The most similar commands are:
 	log
 ```
-# Сборка
-для сборки нам понадобится cargo:
+# Build
+To build, you’ll need `Cargo`:
 ```bash
 cargo build -r
 ```
-бинарник будет лежать в ./target/release/
+The binary will be located in `./target/release/`
