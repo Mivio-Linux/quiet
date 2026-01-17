@@ -1,6 +1,6 @@
 [package]
 name = "quiet-cli"
-version = "0.0.3"
+version = "0.0.4"
 edition = "2024"
 authors = ["miviodev <miviodev@gmail.com>"]
 license = "MIT"
@@ -14,3 +14,6 @@ lto = true
 codegen-units = 1
 strip = true  
 panic = "abort"    
+[[bin]]
+name = "quiet"
+path = "src/main.rs"
