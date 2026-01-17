@@ -1,5 +1,6 @@
 # <img src="https://gitea.com/miviodev/quiet/raw/branch/master/quiet_logo.png" width="32"> quiet 
-![RU README](./README_RU.md)
+[🇷🇺 Русская версия](README_RU.md) | 🇬🇧 English version
+
 This utility lets you suppress unnecessary logs, but displays errors when they occur:
 ```bash
 quiet gut clone # instead of git clone
