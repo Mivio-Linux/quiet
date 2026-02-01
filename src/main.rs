@@ -27,8 +27,10 @@ fn print_errors_or_status_code(command: std::process::Output) {
         }
 }
 fn log_in_file(file_path: &str, content: &str){
-    let _file = std::fs::write(file_path, content);
-
+    std::fs::write(file_path, content).unwrap_or_else(|err| {
+        eprintln!("[ERROR]: Failed write log: {}", err);
+        std::process::exit(1);
+    });
 }
 fn main() {
     let print_usage_and_exit = ||{eprintln!("USAGE:
