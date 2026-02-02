@@ -7,7 +7,7 @@
 [![Gitea](https://img.shields.io/badge/gitea-logo)](https://gitea.com/miviodev/quiet)  
 [![GitHub](https://img.shields.io/badge/github-logo)](https://github.com/miviodev/quiet)
 
-This utility lets you suppress unnecessary output, but displays errors when they occur:
+This utility lets you suppress unnecessary output (or log it with flag -l <path>), but displays errors when they occur:
 
 ```bash
 quiet gut clone # instead of git clone
