@@ -18,8 +18,10 @@ fn print_errors_or_status_code(command: std::process::Output) {
                         let stderr =String::from_utf8_lossy(&command.stderr);
                         if !stderr.is_empty() {
                             eprintln!("[ERROR]: {stderr}");
+                            std::process::exit(1);
                         } else {
                             eprintln!("[ERROR]: Exited with status code: {code}");
+                            std::process::exit(1);
                         }
                },
                 None => eprintln!("[ERROR]: Process terminated by signal")
