@@ -8,7 +8,7 @@
 [![GitHub](https://img.shields.io/badge/github-logo)](https://github.com/miviodev/quiet)
 
 
-Эта программа позволит вам скрыть ненужные логи, но при ошибке выведет ошибки:
+Эта программа позволит вам скрыть ненужные логи (или залогировать их), но при ошибке выведет их:
 ```bash
 quiet gut clone # вместо git clone
 ```
