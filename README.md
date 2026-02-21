@@ -1,5 +1,9 @@
 # <img src="https://gitea.com/miviodev/quiet/raw/branch/master/quiet_logo.png" width="32"> quiet
 
+> ### ⚠️ Migrated to Codeberg
+>
+> This project has [migrated to Codeberg](https://codeberg.org/miviolinux).
+
 🇬🇧 English version | [🇷🇺 Русская версия](./README_RU.md)
 
 [![crates.io](https://img.shields.io/badge/crates-io-yellow.svg)](https://crates.io/crates/quiet-cli)  
